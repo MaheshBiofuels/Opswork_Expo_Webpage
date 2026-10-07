@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#25235f">
+  <link rel="icon" href="opswork-logo.png" type="image/png">
+  <title>OpsWork Junction Private Limited</title>
+
+  <style>
+    :root {
+      --navy: #25235f;
+      --red: #ef3f3b;
+      --bg: #eef0f5;
+      --text: #22243a;
+      --muted: #686a78;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,.97);
+      border-top: 5px solid var(--red);
+      box-shadow: 0 2px 12px rgba(0,0,0,.10);
+    }
+
+    .header-inner {
+      max-width: 1180px;
+      margin: auto;
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .logo-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .logo-link img {
+      display: block;
+      width: 190px;
+      height: auto;
+      max-height: 58px;
+      object-fit: contain;
+    }
+
+    .actions {
+      display: flex;
+      gap: 9px;
+      align-items: center;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 9px 14px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--navy);
+      background: #fff;
+      border: 1px solid #d9d9df;
+    }
+
+    .button.primary {
+      color: #fff;
+      background: var(--red);
+      border-color: var(--red);
+    }
+
+    .hero {
+      max-width: 1000px;
+      margin: 26px auto 18px;
+      padding: 0 16px;
+    }
+
+    .hero-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 22px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.06);
+    }
+
+    h1 {
+      margin: 0 0 7px;
+      color: var(--navy);
+      font-size: clamp(23px, 4vw, 32px);
+    }
+
+    .hero p {
+      margin: 0;
+      line-height: 1.55;
+      color: var(--muted);
+    }
+
+    .document {
+      width: min(1000px, calc(100% - 24px));
+      margin: 0 auto 40px;
+    }
+
+    .page {
+      margin: 0 auto 18px;
+      background: #fff;
+      box-shadow: 0 3px 16px rgba(0,0,0,.13);
+      line-height: 0;
+    }
+
+    .page img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px 16px 35px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 650px) {
+      .header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .logo-link img {
+        width: 165px;
+        max-height: 50px;
+      }
+
+      .actions {
+        width: 100%;
+      }
+
+      .button {
+        flex: 1;
+        text-align: center;
+      }
+
+      .hero {
+        margin-top: 14px;
+      }
+
+      .hero-card {
+        padding: 17px;
+      }
+
+      .document {
+        width: calc(100% - 10px);
+      }
+
+      .page {
+        margin-bottom: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body id="top">
+  <header>
+    <div class="header-inner">
+      <a class="logo-link" href="#top" aria-label="OpsWork">
+        <img src="opswork-logo.png" alt="OpsWork">
+      </a>
+
+      <div class="actions">
+        <a class="button" href="https://www.opswork.in" target="_blank" rel="noopener">
+          Company Website
+        </a>
+        <a class="button primary" href="./Company Profile_OpsWork.pdf" target="_blank" download>
+          Download PDF
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-card">
+      <h1>Company Profile</h1>
+      <p>
+        Utilities Management &amp; Engineering Services — Operations &amp;
+        Maintenance, Utility Management, Engineering Projects and Workforce Solutions.
+      </p>
+    </div>
+  </section>
+
+  <main id="document" class="document">
+      <div class="page">
+        <img src="pages/page-1.png" alt="OpsWork Company Profile - Page 1" loading="lazy">
+      </div>
+      <div class="page">
+        <img src="pages/page-2.png" alt="OpsWork Company Profile - Page 2" loading="lazy">
+      </div>
+      <div class="page">
+        <img src="pages/page-3.png" alt="OpsWork Company Profile - Page 3" loading="lazy">
+      </div>
+      <div class="page">
+        <img src="pages/page-4.png" alt="OpsWork Company Profile - Page 4" loading="lazy">
+      </div>
+      <div class="page">
+        <img src="pages/page-5.png" alt="OpsWork Company Profile - Page 5" loading="lazy">
+      </div>
+      <div class="page">
+        <img src="pages/page-6.png" alt="OpsWork Company Profile - Page 6" loading="lazy">
+      </div>
+      <div class="page">
+        <img src="pages/page-7.png" alt="OpsWork Company Profile - Page 7" loading="lazy">
+      </div>
+      <div class="page">
+        <img src="pages/page-8.png" alt="OpsWork Company Profile - Page 8" loading="lazy">
+      </div>
+      <div class="page">
+        <img src="pages/page-9.png" alt="OpsWork Company Profile - Page 9" loading="lazy">
+      </div>
+      <div class="page">
+        <img src="pages/page-10.png" alt="OpsWork Company Profile - Page 10" loading="lazy">
+      </div>
+      <div class="page">
+        <img src="pages/page-11.png" alt="OpsWork Company Profile - Page 11" loading="lazy">
+      </div>
+      <div class="page">
+        <img src="pages/page-12.png" alt="OpsWork Company Profile - Page 12" loading="lazy">
+      </div>
+      <div class="page">
+        <img src="pages/page-13.png" alt="OpsWork Company Profile - Page 13" loading="lazy">
+      </div>
+      <div class="page">
+        <img src="pages/page-14.png" alt="OpsWork Company Profile - Page 14" loading="lazy">
+      </div>
+      <div class="page">
+        <img src="pages/page-15.png" alt="OpsWork Company Profile - Page 15" loading="lazy">
+      </div>
+  </main>
+
+  <footer>
+    OpsWork Junction Private Limited · Mumbai · www.opswork.in
+  </footer>
+</body>
+</html>
